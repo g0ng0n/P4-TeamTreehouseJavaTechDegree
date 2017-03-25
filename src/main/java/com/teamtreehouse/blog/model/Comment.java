@@ -1,15 +1,20 @@
 package com.teamtreehouse.blog.model;
 
 public class Comment {
-    private String name;
+    private String author;
     private String comment;
 
-    public String getName() {
-        return name;
+
+    public Comment (String author, String comment){
+        this.author = author;
+        this.comment = comment;
+    }
+    public String getAuthor() {
+        return author;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public String getComment() {
