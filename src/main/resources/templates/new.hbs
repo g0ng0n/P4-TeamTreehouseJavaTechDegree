@@ -1,0 +1,17 @@
+{{#partial "content"}}
+<section>
+    <div class="container">
+        <h2>Publish New Entry</h2>
+
+        <form action="/new" method="post">
+            <label for="title"> Title</label>
+            <input type="text" author="title"><br>
+            <label for="entry">Entry</label>
+            <textarea rows="5" author="entry"></textarea>
+            <input type="submit" value="Publish Entry" class="button">
+            <a href="/" class="button button-secondary">Cancel</a>
+        </form>
+    </div>
+</section>
+{{/partial}}
+{{> base.hbs}}

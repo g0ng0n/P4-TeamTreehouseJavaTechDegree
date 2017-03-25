@@ -1,0 +1,17 @@
+{{#partial "content"}}
+<section>
+    <div class="container">
+        <h2>Edit Entry</h2>
+        <form action="/entries/{{blogEntry.slug}}/edit" method="post">
+            <label for="title"> Title</label>
+            <input type="text" author="title" value={{blogEntry.title}}><br>
+            <label for="entry">Entry</label>
+            <textarea rows="5" author="entry" >{{blogEntry.entry}}</textarea>
+            <input type="submit" value="Save Entry" class="button">
+            <a href="/entries/{{blogEntry.slug}}/details" class="button button-secondary">Cancel</a>
+        </form>
+    </div>
+</section>
+
+{{/partial}}
+{{> base.hbs}}

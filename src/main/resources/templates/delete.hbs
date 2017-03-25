@@ -1,0 +1,20 @@
+{{#partial "content"}}
+
+    <section>
+    <div class="container">
+        <div class="edit-entry">
+            <h2>Delete Entry</h2>
+            <p>If you are sure, you want to delete the entry
+                called <b>{{entry.title}}</b>, presse the delete button.</p>
+
+            <form action="/entries/{{blogEntry.slug}}/delete" method="post">
+
+                <input type="submit" value="Delete Entry" class="button">
+                <a href="/entries/{{blogEntry.slug}}/details" class="button button-secondary">Cancel</a>
+
+            </form>
+        </div>
+    </div>
+</section>
+{{/partial}}
+{{> base.hbs}}
