@@ -8,9 +8,7 @@ import spark.Response;
 
 import static spark.Spark.halt;
 
-/**
- * Created by gonzalo.gisbert on 25/03/17.
- */
+
 public class BlogUtilities {
 
 

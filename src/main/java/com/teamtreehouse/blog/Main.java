@@ -1,15 +1,11 @@
 package com.teamtreehouse.blog;
 
-/**
- * Created by gonzalo.gisbert on 24/03/17.
- */
+
 import com.teamtreehouse.blog.dao.BlogDao;
 import com.teamtreehouse.blog.dao.BlogDaoImpl;
 import com.teamtreehouse.blog.model.BlogEntry;
 import com.teamtreehouse.blog.model.Comment;
 import spark.ModelAndView;
-import spark.Request;
-import spark.Response;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.HashMap;
@@ -17,12 +13,8 @@ import java.util.Map;
 
 import static spark.Spark.*;
 
-/**
- * Created by gonzalo.gisbert on 21/03/17.
- */
-public class Main {
 
-    private static final String FLASH_MESSAGE_KEY = "flash_message";
+public class Main {
 
     public static void main(String[] args) {
         staticFileLocation("/public");

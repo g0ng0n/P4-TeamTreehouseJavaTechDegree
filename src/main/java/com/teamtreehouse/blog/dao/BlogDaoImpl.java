@@ -7,9 +7,7 @@ import com.teamtreehouse.blog.model.Comment;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by gonzalo.gisbert on 24/03/17.
- */
+
 public class BlogDaoImpl implements BlogDao{
 
     private List<BlogEntry> entries;
